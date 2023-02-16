@@ -10,7 +10,7 @@ import streamlit as st
 from joblib import load
 
 
-st.title("Deploying the model")
+st.title("Iris model prediction")
 clf = load("DT.joblib")
 LABELS = ['setosa', 'versicolor', 'virginica']
 sp_l = st.slider('sepal length (cm)', min_value=0,max_value = 10)
